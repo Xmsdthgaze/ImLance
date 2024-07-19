@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modern Technology Showcase</title>
+  <style>
+    body {
+      background-image: url("galaxy-getty-990177-1622015269.png");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8;
+      background-attachment: fixed;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 70px;
+    }
+    
+    .image {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      margin: 20px;
+      overflow: hidden;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+      transition: transform 0.3s ease;
+      animation: imageFadeIn 1s ease;
+      cursor: pointer;
+    }
+
+    @keyframes imageFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .image:hover {
+      transform: scale(1.1);
+    }
+    
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .specification {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .image.show-caption .caption {
+      opacity: 1;
+    }
+    
+    .image.show-specification .specification {
+      opacity: 1;
+    }
+    
+    .image.show-specification .caption {
+      opacity: 0;
+    }
+    .links {
+      margin-top: 10px;
+      text-decoration: underline;
+      font-style: italic;
+      font-size: 30px;
+}
+
+.links a {
+    background: linear-gradient(to right, yellow, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	
+
+  }
+</style>
+</head>
+<body>
+  <h1>Modern Technology Showcase</h1>
+  <div class="image-container">
+    <div class="image">
+      <img src="Legion.jpg" alt="Image 1">
+      <div class="caption hidden">
+        <h3>Lenovo Legion Pro 7i</h3>
+        <p>Strongest Gaming Laptop</p>
+        <p>₱211,987.16</p>
+      </div>
+      <div class="specification hidden">
+        <p>Display: 16" WQXGA (2560 x 1600),240Hz</p>
+        <p>Processor: Intel® Core™ i9-13900HX</p>
+        <p>Graphics: NVIDIA GeForce RTX 3080</p>
+        <p>RAM: 32 GB DDR5-5600MHz (SODIMM)</p>
+        <p>Storage: 1 TB SSD M.2 2280 PCIe Gen4/4</p>
+      </div>
+    </div>
+<div class="links">
+  <a href="https://www.lenovo.com/ph/en/laptops/legion/legion-7-series/Legion-Pro-7i-Gen-8-16-inch-Intel/p/LEN101G0023" target="_blank" >Lenovo Legion Pro 7i</a>
+</div>
+
+<div class="image">
+  <img src="promax.jpg" alt="Image 2">
+  <div class="caption hidden">
+    <h3>iPhone 14 Pro Max</h3>
+    <p>Latest iPhone Model</p>
+    <p>₱109,990.00</p>
+  </div>
+  <div class="specification">
+    <p>Display: 6.7" Super Super Retina XDR OLED, 120Hz</p>
+    <p>GPU: Apple GPU (5-core graphics) </p>
+    <p>Processor: Apple A16 Bionic (4 nm)</p>
+    <p>RAM: 6GB</p>
+    <p>Storage: 128GB / 256GB / 512GB / 1TB</p>
+    <p>Rear Camera: Triple 48 MP + 12MP + 12MP</p>
+    <p>Front Camera: 12MP, SL 3D, (depth/biometrics sensor</p>
+  </div>
+</div>
+
+<div class="links">
+  <a href="https://www.apple.com/ph/iphone-14-pro/" target="_blank" >iPhone 14 Pro Max</a>
+</div>
+
+
+<div class="image">
+  <img src="shark.jpg" alt="Image 3">
+  <div class="caption hidden">
+    <h3>Xiaomi Black Shark 5 Pro</h3>
+    <p>High-Performance Gaming Phone</p>
+    <p>₱51,631.60</p>
+  </div>
+  <div class="specification hidden">
+    <p>Display: 6.67" OLED, 1B colors, 144Hz</p>
+    <p>Processor: Qualcomm SM8450 Snapdragon8 Gen-1(4nm)</p>
+    <p>GPU: Adreno 730 </p>
+    <p>RAM: 8GB / 12GB / 16GB</p>
+    <p>Storage: 128GB / 256GB / 512GB</p>
+    <p>Rear Camera: Triple 108 MP + 13MP + 5MP</p>
+    <p>Front Camera: 16 MP</p>
+    <p>Battery: Li-Po 4650 mAh, non-removable</p>
+  </div>
+</div>
+<div class="links">
+  <a href="https://global.blackshark.com/products/blackshark5pro" target="_blank" >Xiaomi Black Shark 5 Pro</a>
+</div>
+
+ <div class="image">
+  <img src="s23.jpg" alt="Image 4">
+  <div class="caption">
+    <h3>Samsung Galaxy S23 Ultra</h3>
+    <p>Most Powerful Samsung</p>
+    <p>₱103,000.00</p>
+  </div>
+  <div class="specification">
+    <p>Display: 6.8" Dynamic AMOLED 2X, 120Hz</p>
+    <p>Processor: Qualcomm SM8550-AC Snapdragon8 Gen2 (4nm)</p>
+    <p>RAM: 8GB / 12GB</p>
+    <p>Storage: 256GB / 512GB / 1TB</p>
+    <p>Rear Camera: Quad 200 MP + 12MP + 10MP + 10MP</p>
+    <p>Front Camera: 12MP</p>
+    <p>Battery: Li-Ion 5000 mAh, non-removable</p>
+  </div>
+</div>
+<div class="links">
+  <a href="https://www.samsung.com/ph/smartphones/galaxy-s23-ultra/" target="_blank" >Samsung Galaxy S23 Ultra</a>
+</div>
+
+<div class="image">
+      <img src="printer.jpg" alt="Image 5">
+      <div class="caption hidden">
+        <h3>Brother MFC-L2750DW XL</h3>
+        <p>No. 1 Printer in the World</p>
+        <p>₱22,230.49</p>
+      </div>
+      <div class="specification hidden">
+        <p>Type: All-in-One Monochrome Laser</p>
+        <p>Printing: Duplex, Wireless</p>
+        <p>Print Speed: Up to 36 ppm</p>
+        <p>Input Capacity: 250 Sheets</p>
+        <p>Connectivity: USB, Ethernet, Wi-Fi</p>
+      </div>
+</div>
+<div class="links">
+  <a href="https://www.brother-usa.com/products/mfcl2750dwxl" target="_blank" >Brother MFC-L2750DW XL</a>
+</div>
+
+<div class="image">
+  <img src="camera.jpg" alt="Image 6">
+  <div class="caption">
+    <h3>Nikon D850</h3>
+    <p>No. 1 DSLR in the World</p>
+    <p>₱305,674.07</p>
+  </div>
+  <div class="specification hidden">
+    <p>Resolution: 45.7MP Full-Frame CMOS</p>
+    <p>ISO Range: 64-25600 (Expandable to 32-102400)</p>
+    <p>Focus Points: 153 AF Points</p>
+    <p>Shooting Speed: 7 fps (9 fps with Battery Grip)</p>
+    <p>Video: 4K UHD at 30fps</p>
+  </div>
+</div>
+<div class="links">	
+  <a href="https://www.nikonusa.com/en/nikon-products/product/dslr-cameras/13538/d850.html" target="_blank" >Nikon D850</a>
+</div>
+
+<div class="image">
+      <img src="telescope.jpg" alt="Image 7">
+      <div class="caption hidden">
+        <h3>James Webb Space Telescope</h3>
+        <p>Most Powerful Telescope in the Solar System</p>
+        <p>$10,000,000,000</p>
+      </div>
+      <div class="specification hidden">
+        <p>Primary Mirror Diameter: 6.5 meters</p>
+        <p>Wavelength Range: 0.6 - 28.5 micrometers</p>
+        <p>Observatory Type: Space-based</p>
+        <p>Launch Date: December 25, 2021 | 12:20 UTC</p>
+        <p>Mission Duration: At least 10 years</p>
+      </div>
+    </div>
+</div>
+<div class="links" style="text-align: center; height: 20px;">	
+<a href="https://solarsystem.nasa.gov/missions/james-webb-space-telescope/in-depth/" target="_blank" >James Webb Space Telescope</a>
+</div>
+
+<script>
+    const images = document.querySelectorAll(".image");
+
+    images.forEach((image) => {
+      image.addEventListener("click", () => {
+        image.classList.toggle("show-caption");
+      });
+      image.addEventListener("dblclick", () => {
+        image.classList.toggle("show-specification");
+      });
+    });
+  </script>
+</body>
+</html>
